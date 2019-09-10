@@ -1,5 +1,6 @@
-module.exports = {
-    googleProjectID: 'chatbotagent-qbhqbr',
-    dialogFlowSessionID: 'react-bot-session',
-    dislaogFlowSessionLanguageCode: 'en-US'
+if ( process.env.NODE_ENV === 'production' ) {
+    module.exports = require('./prod');
+}
+else {
+    module.exports = require('./dev');
 }

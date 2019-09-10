@@ -1,1 +1,4 @@
 node_modules
+keys
+.gitignore
+config/dev.js
