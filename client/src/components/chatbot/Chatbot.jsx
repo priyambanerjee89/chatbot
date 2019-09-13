@@ -135,13 +135,13 @@ class Chatbot extends Component {
     
     render() {
         return (
-            <div style={{ height: 500, width: 400, position: 'absolute', bottom: 0, right: 0, border: '1px solid lightgrey' }}>
+            <div style={{ minHeight: 100, maxHeight: 450, width: 400, position: 'absolute', bottom: 0, right: 0, border: '1px solid lightgrey' }}>
                 <nav>
                     <div className="nav-wrapper">
                         <a style={{ paddingLeft: '10px' }} className="brand-logo">Chatbot</a>
                     </div>
                 </nav>
-                <div id="chatbot" style={{ height: 388, width: '100%', overflow: 'auto' }}>
+                <div id="chatbot" style={{ minHeight: 50, maxHeight: 400, width: '100%', overflow: 'auto' }}>
                     { this.renderMessages( this.state.messages ) }
                     <div ref={ this.messagesEnd } 
                         style={{ float: 'left', clear: 'both' }}></div>
